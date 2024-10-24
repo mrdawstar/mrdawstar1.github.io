@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gra w Dzika</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Gra w Dzika</h1>
+<p>Gdy liczba jest podzielna przez 7 lub zawiera cyfrę 7, kliknij na zdjęcie Dzika!</p>
+<div class="game-area">
+<div class="number-display">1</div>
+<img src="dzik.jpg" alt="Dzik" id="boar">
+</div>
+<div class="controls">
+<button onclick="startGame()" class="start">Start</button>
+<label for="speed">Tempo: </label>
+<input type="range" id="speed" min="500" max="3000" value="1500">
+<span id="speed-value">1.5s</span>
+</div>
+<div class="scoreboard">
+<p>Wynik: <span id="score">0</span></p>
+<p>Czas reakcji: <span id="reaction-time">0</span> ms</p>
+<div id="high-scores">
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
